@@ -22,6 +22,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  width: 100%;
 }
 
 /* Navbar */
@@ -167,6 +168,9 @@ body {
   border: 1px solid rgba(0,0,0,0.05);
   overflow: hidden;
   transition: box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .card:hover {
@@ -175,6 +179,9 @@ body {
 
 .card-body {
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .card-title {
@@ -202,9 +209,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 16px;
+  margin-top: auto;
   padding-top: 16px;
   border-top: 1px solid #f3f4f6;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 /* Modal */
