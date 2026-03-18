@@ -52,7 +52,7 @@ const Iscrizioni = () => {
                   <h3 className="card-title">
                     {iscrizione.Titolo || `Evento #${iscrizione.EventoID}`}
                   </h3>
-                  {iscrizione.CheckinEffettuato && (
+                  {Boolean(iscrizione.CheckinEffettuato) && (
                     <span className="badge badge-success">
                       <CheckCircle className="h-3 w-3" style={{ width: '12px', height: '12px' }} />
                       Check-in effettuato
